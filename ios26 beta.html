@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iOS 26 Beta – Kapsamlı Rehber</title>
+  <style>
+    :root {
+      --bg-color: #f4f4f9;
+      --text-color: #333;
+      --header-bg: #111;
+      --header-text: #fff;
+      --card-bg: #fff;
+      --accent-color: #0078D4;
+    }
+    [data-theme="dark"] {
+      --bg-color: #121212;
+      --text-color: #eee;
+      --header-bg: #000;
+      --header-text: #fff;
+      --card-bg: #1e1e1e;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: var(--header-bg);
+      color: var(--header-text);
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+    }
+    header p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 10px auto;
+    }
+    .theme-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background: var(--accent-color);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .content {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px;
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    }
+    h2 { color: var(--accent-color); margin-top: 40px; }
+    p { font-size: 17px; line-height: 1.8; }
+    ul, dl { margin-left: 20px; padding-left: 10px; }
+    .center-img { text-align: center; margin: 30px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
+    th { background: var(--accent-color); color: white; }
+    .accordion { margin: 20px 0; }
+    .accordion-item { background: var(--card-bg); border: 1px solid #ccc; border-radius: 5px; margin-bottom: 10px; }
+    .accordion-header {
+      padding: 15px;
+      cursor: pointer;
+      font-weight: bold;
+      background: var(--accent-color);
+      color: #fff;
+      border-radius: 5px 5px 0 0;
+    }
+    .accordion-content { padding: 15px; display: none; }
+    footer { background: var(--header-bg); color: var(--header-text); padding: 20px; text-align: center; font-size: 14px; }
+    .timeline dt, .faq dt { font-weight: bold; margin-top: 20px; }
+    .timeline dd, .faq dd { margin-left: 20px; margin-bottom: 10px; }
+    .feedback-form label { display: block; margin: 10px 0 5px; }
+    .feedback-form input, .feedback-form textarea { width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc; }
+    .feedback-form button { background: var(--accent-color); color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌙 / ☀️</button>
+  <header>
+    <h1>iOS 26 Beta – Kapsamlı Rehber</h1>
+    <p>Yeni Liquid Glass tasarımı, Apple Intelligence, Geliştirici Araçları ve çok daha fazlası</p>
+  </header>
+  <div class="content">
+    <section>
+      <h2>🎨 Liquid Glass Görselleri</h2>
+      <div class="center-img">
+        <img src="example1.jpg" alt="Bildirim Görünümü" style="max-width:100%; border-radius:8px;" />
+      </div>
+    </section>
+    <section>
+      <h2>🗓️ Sürüm Takvimi</h2>
+      <dl class="timeline">
+        <dt>Haziran 10, 2025:</dt>
+        <dd>iOS 26 Beta 1 (Geliştiricilere özel)</dd>
+        <dt>Temmuz 2025:</dt>
+        <dd>Public Beta</dd>
+        <dt>Eylül 2025:</dt>
+        <dd>Final Sürüm</dd>
+      </dl>
+    </section>
+    <section>
+      <h2>📱 Uyumlu Cihazlar</h2>
+      <table>
+        <tr><th>Model</th><th>Durum</th></tr>
+        <tr><td>iPhone 11 ve üstü</td><td>Destekli</td></tr>
+        <tr><td>iPhone XR / XS</td><td>Desteklenmiyor</td></tr>
+      </table>
+      <p><strong>Daha detaylı cihaz listesi:</strong></p>
+      <ul>
+        <li>iPhone 11, 11 Pro, 11 Pro Max</li>
+        <li>iPhone 12, 12 Mini, 12 Pro, 12 Pro Max</li>
+        <li>iPhone 13, 13 Mini, 13 Pro, 13 Pro Max</li>
+        <li>iPhone 14, 14 Plus, 14 Pro, 14 Pro Max</li>
+        <li>iPhone 15, 15 Plus, 15 Pro, 15 Pro Max</li>
+        <li>iPhone SE (2022 ve sonrası)</li>
+        <li>iPad modelleri için resmi açıklama bekleniyor</li>
+      </ul>
+    </section>
+    <section>
+      <h2>🧠 Apple Intelligence Özellikleri</h2>
+      <ul>
+        <li>Visual Understanding: Kamera ve uygulamalar AI ile görsel tanıma yetenekleri geliştirdi.</li>
+        <li>Genmoji & AI Emoji: Kişiselleştirilmiş ve animasyonlu emoji seçenekleri.</li>
+        <li>Contextual Siri: Siri, bağlama göre daha akıllı ve doğal cevaplar sunuyor.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>🛠️ Geliştirici Araçları</h2>
+      <ul>
+        <li>Swift 6 ile dil geliştirmeleri ve yeni syntax özellikleri.</li>
+        <li>CoreML 6.0: Gelişmiş makine öğrenimi modelleri için destek.</li>
+        <li>Yeni Haptic API desteği ile dokunsal geri bildirimlerde gelişme.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>🚗 CarPlay, Apple Music, Maps</h2>
+      <ul>
+        <li>CarPlay: Yenilenmiş kullanıcı arayüzü ve yapay zeka destekli öneriler.</li>
+      </ul>
+      <div class="center-img">
+        <img src="carplay-ui.jpg" alt="CarPlay Yeni Arayüz" style="max-width:100%; border-radius:8px;" />
+      </div>
+      <ul>
+        <li>Apple Music: Mood AI ve AutoPlay 2.0 özellikleri ile müzik deneyimi.</li>
+      </ul>
+      <div class="center-img">
+        <img src="apple-music.jpg" alt="Apple Music Mood AI" style="max-width:100%; border-radius:8px;" />
+      </div>
+      <ul>
+        <li>Maps: Canlı trafik verisi ve offline harita modu.</li>
+      </ul>
+      <div class="center-img">
+        <img src="maps-offline.jpg" alt="Maps Offline Mod" style="max-width:100%; border-radius:8px;" />
+      </div>
+    </section>
+    <section>
+      <h2>🔐 Güvenlik & Gizlilik</h2>
+      <ul>
+        <li>App Lock: Face ID ile uygulama kilidi imkanı.</li>
+        <li>iCloud Anahtar Zinciri gelişmeleri ve yeni şifreleme protokolleri.</li>
+        <li>Apple Intelligence için özel işlemci tabanlı güvenlik çözümleri.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>💬 Kullanıcı Geri Bildirimleri</h2>
+      <div class="feedback-form">
+        <label for="name">Adınız:</label>
+        <input type="text" id="name" placeholder="Adınızı girin" />
+
+        <label for="comment">Görüşünüz:</label>
+        <textarea id="comment" rows="4" placeholder="Ne düşünüyorsunuz?"></textarea>
+
+        <button onclick="alert('Geri bildiriminiz alındı! Teşekkürler!')">Gönder</button>
+      </div>
+    </section>
+    <section>
+      <h2>📥 iOS 26 Beta Profili</h2>
+      <p><a href="#" style="color: var(--accent-color);">Buraya tıklayarak beta profilini indirebilirsiniz</a>.</p>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 iOS 26 Rehberi. Bu içerik resmi değildir. Hazırlayan: Ünal</p>
+  </footer>
+  <script>
+    function toggleTheme() {
+      const el = document.documentElement;
+      el.setAttribute(
+        "data-theme",
+        el.getAttribute("data-theme") === "dark" ? "light" : "dark"
+      );
+    }
+  </script>
+</body>
+</html>
